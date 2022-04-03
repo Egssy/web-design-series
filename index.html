@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <title>Form Validation Demo</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <div id="container">
+
+            <div class="form-holder">
+                <div class="form-contents">
+                    <form id="collect-data-form" action="#" method="get">
+                        <fieldset>
+                            <legend><strong>Enter your data</strong></legend>
+                            <!-- Full name of the user -->
+                            <p>
+                                <label for="fullname">Full Name<abbr title="Required">*</abbr></label>
+                                <input type="text" name="fullname" id="fullname" spellcheck="false" required />
+                            </p>
+
+                            <!--Email of the user -->
+                            <p>
+                                <label for="email">Email<abbr title="Required">*</abbr></label>
+                                <input type="email" name="email" id="email" spellcheck="false" required />
+                            </p>
+
+                            <!-- Birthday of the user -->
+                            <p>
+                                <label for="birthday">Birthday<abbr title="Required">*</abbr></label>
+                                <input type="date" name="birthday" id="birthday" required />
+                            </p>
+
+                            <!-- Gender of the user -->
+                            <p>
+                                <legend>Gender<abbr title="Required">*</abbr></legend>
+
+                                <input type="radio" name="gender" id="gender-male" required />
+                                <label for="gender">Male</label>
+
+                                <input type="radio" name="gender" id="gender-female" />
+                                <label for="gender">Female</label>
+
+                                <input type="radio" name="gender" id="gender-others" />
+                                <label for="gender">Others</label>
+                            </p>
+
+                            <!-- City of the user -->
+                            <p>
+                                <label for="cities">City<abbr title="Required">*</abbr></label>
+                                <select name="cities" id="cities">
+                                    <option value="Kathmandu">Kathmandu</option>
+                                    <option value="Bhaktapur">Bhaktapur</option>
+                                    <option value="Lalitpur">Lalitpur</option>
+                                    <option value="Pokhara" selected="selected">Pokhara</option>
+                                    <option value="Biratnagar">Biratnagar</option>
+                                </select>
+                            </p>
+
+                            <!-- Food Preferences -->
+                            <p>
+                                <legend>Food Preferences</legend>
+
+                                <input type="checkbox" name="food-preference-veg" id="food-preference-veg" />
+                                <label for="food-preference-veg">Veg.</label>
+
+                                <input type="checkbox" name="food-preference-buff" id="food-preference-buff" />
+                                <label for="food-preference-buff">Buff.</label>
+
+                                <input type="checkbox" name="food-preference-non-pork" id="food-preference-non-pork" />
+                                <label for="food-preference-non-pork">Pork</label>
+
+                                <input type="checkbox" name="food-preference-chicken" id="food-preference-chicken" />
+                                <label for="food-preference-chicken">Chicken</label>
+
+                                <input type="checkbox" name="food-preference-non-mutton"
+                                    id="food-preference-non-mutton" />
+                                <label for="food-preference-non-mutton">Mutton</label>
+                            </p>
+
+                        </fieldset>
+
+                        <!-- Buttons -->
+                        <fieldset id="form-buttons">
+
+                            <input type="submit" value="Save" class="buttons">
+                            <input type="reset" value="Cancel" class="buttons">
+
+                        </fieldset>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
